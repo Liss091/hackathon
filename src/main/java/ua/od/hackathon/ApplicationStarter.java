@@ -30,23 +30,5 @@ public class ApplicationStarter {
         } finally {
             jettyServer.destroy();
         }
-//        boolean debug = false;
-//        //jettyServer.setHandler(new AppContextConfig().getHandlersConfig());
-//        ServletContextHandler context = new ServletContextHandler(ServletContextHandler.NO_SESSIONS);
-//        context.setContextPath("/");
-//        jettyServer.setHandler(context);
-//
-//
-//        ServletHolder servletHolder = context.addServlet(ServletContainer.class, "/*");
-//        servletHolder.setInitOrder(0);
-//        servletHolder.setInitParameter(PKG_PROVIDER, "controller");
-//        try {
-//            jettyServer.start();
-//            if(debug) jettyServer.dumpStdErr();
-//            jettyServer.join();
-//        } catch (Exception e) {
-//        } finally {
-//            jettyServer.destroy();
-//        }
     }
 }
